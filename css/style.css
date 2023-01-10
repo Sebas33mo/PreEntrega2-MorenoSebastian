@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgb(16, 5, 77), rgb(0, 17, 255));
+    height: auto;
+
+}
+
+
+.logo{
+    width: 64px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    
+    "A"
+    "B"
+    "c";
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.grid h1{
+    grid-area: A;
+}
+.Conocenos{
+    grid-area: B;
+}
+.nosotros{
+    grid-area: c;
+    gap: 10px;
+}
+.nosotros div img{
+    width: 200px;
+}
+
+
+footer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgba(28, 196, 238, 0.068);
+}
+.footer a img{
+    width: 40px;
+    align-items:flex-end;
+}
+.imgT{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+.imgT img{
+
+    width: 200px;
+    gap: 10px;
+    margin: 10px;
+}
+
+@media (min-width:800px ){
+    .nosotros{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+
+        
+    }
+
+    .imgT{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
